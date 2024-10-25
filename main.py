@@ -24,14 +24,14 @@ def main():
     using_date_format = using_date.strftime("%Y-%m-%d %p %I:%M")
     print("Defined Targets : ")
     print()
-    show_target('sop_target.cfg')  # show_target 함수 호출
+    show_target('sop_target.cfg') 
     print()
 
     user_input = input("Please enter the target : ")
     print()
 
     try:
-        ip, port, Called_AET, output_file = get_config_values(user_input)  # get_config_values 함수 호출
+        ip, port, Called_AET, output_file = get_config_values(user_input)  
     except ValueError as e:
         print(e)
     print(ip)
@@ -39,7 +39,7 @@ def main():
     target_port = int(port)
 
     section = "DEFAULT"
-    input_file = get_config_default(section)  # get_config_default 함수 호출
+    input_file = get_config_default(section)  
 
     with open(input_file, 'r', encoding='UTF-8') as file:
         lines = file.readlines()
@@ -100,12 +100,14 @@ def main():
         sock.connect((target_ip, target_port))
         num += 1
 
+        #Packet generation Module
         message = generate_packet(Calling_AE_title, Called_AE_Title, i)
         print("==============================================")
         print("<A-ASSOCIATE>")
         sock.send(message)
         print(f"[Request to Target] :\t packet send success[{num}]!")
 
+		#Discerning Module
         recv_data = receive_data_with_length_field(sock)
         print(f"[Response from Target] : packet recv success[{num}]!")
 
@@ -169,10 +171,10 @@ def get_config_values(target):
 
     ip = config[target]['ip']
     port = config[target]['port']
-    Called_AE_Title = config[target].get('Called_AE_Title', '')  # 기본값으로 빈 문자열을 가져옴
+    Called_AE_Title = config[target].get('Called_AE_Title', '')  
 
-    if not Called_AE_Title:  # Called_AE_Title이 비어 있으면
-        Called_AE_Title = "DIMSESCP"  # 기본값 설정
+    if not Called_AE_Title:  
+        Called_AE_Title = "DIMSESCP" 
 
     output_file = config[target]['output_file']
 
