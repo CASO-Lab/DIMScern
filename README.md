@@ -5,19 +5,24 @@
 .
 ├── Inputs
 │   └── SOP_UID.txt
-├── MDPI_SOP_UID_fuzzer.py
-├── sop_target.cfg
-├── Logs    (If you didn't run the script, it doesn't exist.)
-└── Outputs (If you didn't run the script, it doesn't exist.)
+├── Logs                (If you didn't run the main script, it doesn't exist.)
+│   └── DIMScern_log.txt
+├── Outputs             (If you didn't run the main script, it doesn't exist.)
+│   └── [Target]_sop_uid_accept.txt
+├── README.md
+├── discerning.py
+├── main.py
+└── packet_generation.py
 
-3 directories, 4 files
+3 directory, 7 files
 ```
 ```
-Usage : python3 MDPI_SOP_UID_fuzzer.py -c sop_target.cfg
+Usage : python3 main.py -c sop_target.cfg
 ```
-If you want to run DIMScern on another target, just define the target's name, ip, port, and Called_AE_Title in sop_target.cfg.
+- If you want to run DIMScern on another target, just define the target's name, ip, port, and Called_AE_Title in "sop_target.cfg".
+- The SOP Class UIDs in our input "SOP_UID.txt" are a list obtained from the DICOM standards PS3.4, PS3.6.
 - - -
-## \<Target download URL\>
+## \<Targets download URL\>
 
 + DCMTK : <https://dicom.offis.de/en/dcmtk/dcmtk-tools/>
 
