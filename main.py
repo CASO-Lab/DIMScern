@@ -107,7 +107,7 @@ def main():
         sock.send(message)
         print(f"[Request to Target] :\t packet send success[{num}]!")
 
-		#Discerning Module
+        #Discerning Module
         recv_data = receive_data_with_length_field(sock)
         print(f"[Response from Target] : packet recv success[{num}]!")
 
