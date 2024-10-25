@@ -1,0 +1,10 @@
+.
+├── Inputs
+│   └── SOP_UID.txt
+├── README.md
+├── discerning.py
+├── main.py
+├── packet_generation.py
+└── stdout.txt
+
+1 directory, 6 files
