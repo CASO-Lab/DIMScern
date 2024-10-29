@@ -12,9 +12,10 @@
 ├── README.md
 ├── discerning.py
 ├── main.py
-└── packet_generation.py
+├── packet_generation.py
+└── sop_target.cfg
 
-3 directory, 7 files
+3 directory, 8 files
 ```
 ```
 Usage : python3 main.py -c sop_target.cfg
