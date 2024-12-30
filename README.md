@@ -50,3 +50,19 @@ Usage : python3 main.py -c sop_target.cfg
 + Dicoogle  : <https://dicoogle.com/>
 
 + ConQuest  : <https://www.natura-ingenium.nl/dicom.html>
+
+- - - 
+
+## Citing our [paper](https://www.mdpi.com/1424-8220/24/23/7470)
+```bibtex
+@article{kim2024dimscern,
+title={DIMScern: A Framework for Discerning DIMSE Services on Remote Medical Devices},
+author={Kim, Gunhee and Kim, Dohyun and Seo, Jeonghun and Lee, Seyoung and Song, Wonjun},
+journal={Sensors (Basel, Switzerland)},
+volume={24},
+number={23},
+pages={7470},
+year={2024}
+}
+```
+
