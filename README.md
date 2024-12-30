@@ -21,7 +21,7 @@
 Usage : python3 main.py -c sop_target.cfg
 ```
 - If you want to run DIMScern on another target, just define the target's name, ip, port, and Called_AE_Title in "sop_target.cfg".
-- The SOP Class UIDs in our input "SOP_UID.txt" are a list obtained from the DICOM standards PS3.4, PS3.6.
+- The SOP Class UIDs in our input "SOP_UID.txt" are a list obtained from the DICOM standards [PS 3.4](https://dicom.nema.org/medical/dicom/2024c/output/pdf/part04.pdf), [PS 3.6](https://dicom.nema.org/medical/dicom/2024c/output/pdf/part06.pdf).
 - - -
 ## \<Targets download URL\>
 
