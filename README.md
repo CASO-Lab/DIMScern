@@ -1,4 +1,7 @@
-## DIMScern 
+## DIMScern
+
+*PDIMScern* is a software framework designed to identify the DIMSE(DICOM Message Service Element) services of remote medical devices. This framework sends specially crafted packets and analyzes the response packets to automatically identify all SOP(Service-Object Pair) class UIDs supported by the target.
+
 - - -
 ## Directory structure of the DIMScern 
 ```
